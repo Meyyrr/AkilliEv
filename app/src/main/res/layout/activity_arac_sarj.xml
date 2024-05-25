@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AracSarjActivity">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Araç Şarj Sistemi"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+
+
+    <ImageView
+        android:id="@+id/imageViewBattery"
+        android:layout_width="378dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_battery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+
+    <TextView
+        android:id="@+id/textViewSarjDurumu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şarj Durumu: %50"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/imageViewBattery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+
+
+    <Button
+        android:id="@+id/buttonSarjBaslat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Şarjı Başlat"
+        app:layout_constraintTop_toBottomOf="@id/textViewSarjDurumu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+
+    <Button
+        android:id="@+id/buttonSarjDurdur"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Şarjı Durdur"
+        app:layout_constraintTop_toBottomOf="@id/buttonSarjBaslat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

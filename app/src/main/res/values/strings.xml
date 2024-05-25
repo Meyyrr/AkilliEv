@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Akilliev</string>
+    <string name="acik_kilit">Açık Kilit</string>
+    <string name="kapali_kilit">Kapalı Kilit</string>
+    <string name="cim_bicme_robotu2">Image Button 1</string>
+    <string name="havuz_islemleri">Image Button 2</string>
+    <string name="sulama_sistemi">Image Button 3</string>
+    <string name="arac_sarj">Image Button 4</string>
+    <string name="hava_temizleyici_desc">Hava Temizleyici</string>
+    <string name="hava_kalitesi_desc">Hava Kalitesi</string>
+</resources>
