@@ -14,13 +14,13 @@ public class BahceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bahce);
 
-
+        // Geri butonunu etkinleştir
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-
+        // ImageButtonları tanımla ve tıklama olaylarını ekle
         ImageButton imageButton1 = findViewById(R.id.imageButton1);
         ImageButton imageButton2 = findViewById(R.id.imageButton2);
         ImageButton imageButton3 = findViewById(R.id.imageButton3);
@@ -69,4 +69,5 @@ public class BahceActivity extends AppCompatActivity {
         return true;
     }
 }
+
 

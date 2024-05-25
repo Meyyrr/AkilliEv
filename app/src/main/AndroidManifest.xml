@@ -9,70 +9,50 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".HavaTemizleyiciActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HavaKalitesiActivity"
-            android:exported="false" />
+
+        <!-- OrtakAlanlarActivity (Launcher Activity) -->
         <activity
             android:name=".OrtakAlanlarActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".AracSarjActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HavuzIslemleriActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SulamaSistemiActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CimBicmeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".BahceActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".ProjeksiyonActivity"
-            android:exported="false" /> <!-- MainActivity -->
+        <!-- MainActivity -->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity> <!-- AkilliKilitActivity -->
-        <activity
-            android:name=".AkilliKilitActivity"
-            android:exported="false"
-            android:parentActivityName=".MainActivity">
+            android:exported="true"
+            android:parentActivityName=".OrtakAlanlarActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity> <!-- SesSistemiActivity -->
+                android:value=".OrtakAlanlarActivity" />
+        </activity>
+
+        <!-- BahceActivity -->
         <activity
-            android:name=".SesSistemiActivity"
-            android:exported="false"
+            android:name=".BahceActivity"
+            android:exported="true"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-    </application>
 
+        <!-- Diğer aktiviteler -->
+        <activity android:name=".HavaTemizleyiciActivity" android:exported="false" />
+        <activity android:name=".HavaKalitesiActivity" android:exported="false" />
+        <activity android:name=".AracSarjActivity" android:exported="false" />
+        <activity android:name=".HavuzIslemleriActivity" android:exported="false" />
+        <activity android:name=".SulamaSistemiActivity" android:exported="false" />
+        <activity android:name=".CimBicmeActivity" android:exported="false" />
+        <activity android:name=".ProjeksiyonActivity" android:exported="false" />
+        <activity android:name=".AkilliKilitActivity" android:exported="false" android:parentActivityName=".MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".SesSistemiActivity" android:exported="false" android:parentActivityName=".MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity" />
+        </activity>
+    </application>
 </manifest>
